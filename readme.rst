@@ -1,29 +1,19 @@
 ###################
-What is CodeIgniter
+What is TaskApi
 ###################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+This is the basic Registration and Login System using Codeigniter 3 through API. Added Field Validation fo all the fields. Username, Email, Mobile Must be Unique. Password entered by user will be in Encrypted form.
 
 *******************
 Release Information
 *******************
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+This is the basics No Future release will be there.
 
 **************************
 Changelog and New Features
 **************************
-
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+https://github.com/satyam588/TaskApi
 
 *******************
 Server Requirements
@@ -39,8 +29,7 @@ issues, as well as missing features.
 Installation
 ************
 
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
+Please Copy and Paste the folder to the server and Change the Database cretentials in database.php which is available inside database Folder. 
 
 *******
 License
