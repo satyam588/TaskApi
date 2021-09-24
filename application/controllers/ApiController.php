@@ -44,7 +44,7 @@ class ApiController extends CI_Controller{
             $this->form_validation->set_rules('username', 'Username', 'required|is_unique[users.username]');
             $this->form_validation->set_rules('mobile', 'Mobile', 'required|numeric|min_length[10]|max_length[10]|is_unique[users.mobile]');
             $this->form_validation->set_rules('email', 'Email', 'required|valid_email|is_unique[users.email]');
-            $this->form_validation->set_rules('password', 'Password', 'required');
+            $this->form_validation->set_rules('password', 'Password', 'required|regex_match[/^\S*(?=\S*[a-z])(?=\S*[\d])(?=\S*[\W])\S*$/]');
             $this->form_validation->set_rules('re-password', 'Re-Password', 'required|matches[password]');
 
             if ($this->form_validation->run() == FALSE){
