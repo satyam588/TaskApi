@@ -47,13 +47,13 @@ class ApiController extends CI_Controller{
             $this->form_validation->set_rules('password', 'Password', 'required');
             $this->form_validation->set_rules('re-password', 'Re-Password', 'required|matches[password]');
 
-            $image_data = $this->upload_image();
-
             if ($this->form_validation->run() == FALSE){
                 echo "Failed Validation <br>";
                 echo validation_errors();
 
             }else{
+            	$image_data = $this->upload_image();
+            	
                 $data = $this->ApiModel->register( $image_data['file_name'] );
 
                 echo $data;
